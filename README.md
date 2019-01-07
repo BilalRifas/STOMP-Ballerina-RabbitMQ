@@ -3,8 +3,6 @@ STOMP ballerina client using RabbitMQ broker.
 
 ![alt text](https://github.com/BilalRifas/STOMP-Ballerina-RabbitMQ/blob/master/STOMP%20Diagram.png)
 
-STOMP UseCase (Class Diagram).png
-
 ![alt text](https://cdn-images-1.medium.com/max/800/1*6-dgobKL8tTQCXBsBPadqw.png)
 
  # CONNECT FRAME
