@@ -1,7 +1,7 @@
 # STOMP-Ballerina-RabbitMQ
 STOMP ballerina client using RabbitMQ broker.
 
-![alt text](https://github.com/BilalRifas/STOMP-Ballerina-RabbitMQ/blob/master/STOMP%20UseCase%20(Class%20Diagram).png)
+![alt text](https://github.com/BilalRifas/STOMP-Ballerina-RabbitMQ/blob/master/STOMP%20Diagram.png)
 
 STOMP UseCase (Class Diagram).png
 
