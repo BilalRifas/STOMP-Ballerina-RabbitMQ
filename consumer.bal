@@ -1,11 +1,12 @@
-import my.stomp;
+import my.stompSubscriber;
 import ballerina/log;
 import ballerina/io;
 import ballerina/socket;
+import ballerina/system;
 import ballerina/transactions;
 
 // This initializes a STOMP connection with the STOMP broker.
-stomp:Sender stompSender = new({
+stompSubscriber:Receiver stompReceiver = new({
         host: "localhost",
         port: 61613,
         login: "guest",
@@ -20,11 +21,12 @@ public function main() {
     // to retry the message along with transaction Id.
     transaction {
         // This sends the Ballerina message to the stomp broker.
-        string message = "Hello World From Ballerina";
         string destination = "/queue/test";
-        var broadcast = stompSender->send(message,destination);
-        //if (returnVal is error) {
-        //    io:println("Unable to send message", returnVal);
+        string subscribeId = system:uuid();
+        string ack = "client";
+        var receive = stompReceiver->subscribe(destination, subscribeId, ack);
+        //if (receive is error) {
+        //    io:println("Unable to send message", receive);
         //}
     }
 }
