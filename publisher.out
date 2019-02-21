@@ -1,5 +1,5 @@
 # To run the client, navigate to the directory that contains the
-# `.bal` file and use the `ballerina run` command.
+# `.bal` file and use the `ballerina run --experimental` command.
 $ ballerina run --experimental publisher.bal
 
 [ballerina/http] started HTTP/WS endpoint 172.17.0.1:38163
